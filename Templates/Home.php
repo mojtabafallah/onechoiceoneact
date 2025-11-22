@@ -1,16 +1,18 @@
 <?php
-/* Template Name: Home Page */
+/**
+ * Template Name: Home Page Template
+ */
 ?>
-<?php get_header('custom') ?>
+<?php include plugin_dir_path(__FILE__) . 'header-custom.php'; ?>
 <div class="hero_section">
     <img
         class="hero_section_first_star"
-        src="./assets/images/starIconFirst.svg"
+        src="<?php echo one_url_images?>/starIconFirst.svg"
         alt=""
     />
     <img
         class="hero_section_second_star"
-        src="./assets/images/starIconFirst.svg"
+        src="<?php echo one_url_images?>/starIconFirst.svg"
         alt=""
     />
     <div class="title_hero_section_wrapper">
@@ -36,19 +38,19 @@
                         class="community_box_image_first"
                         width="40"
                         height="40"
-                        src="./assets/images/firstRadiusCommunity.png"
+                        src="<?php echo one_url_images?>/firstRadiusCommunity.png"
                         alt=""
                     />
                     <img
                         class="community_box_image_second"
-                        src="./assets/images/secondRadiusCommunity.png"
+                        src="<?php echo one_url_images?>/secondRadiusCommunity.png"
                         width="40"
                         height="40"
                         alt=""
                     />
                     <img
                         class="community_box_image_third"
-                        src="./assets/images/thirdRadiusCommunity.png"
+                        src="<?php echo one_url_images?>/thirdRadiusCommunity.png"
                         width="40"
                         height="40"
                         alt=""
@@ -62,9 +64,9 @@
         </div>
         <div class="box_video_wrapper">
             <div class="box_video_play_wrapper openVideoModal">
-                <img src="./assets/images/play.svg" width="28" height="28" alt="" />
+                <img src="<?php echo one_url_images?>/play.svg" width="28" height="28" alt="" />
             </div>
-            <img src="./assets/images/imageClip.png" alt="" />
+            <img src="<?php echo one_url_images?>/imageClip.png" alt="" />
         </div>
     </div>
     <div class="box_video_play_wrapper_desktop">
@@ -79,19 +81,19 @@
                         class="community_box_image_first"
                         width="40"
                         height="40"
-                        src="./assets/images/firstRadiusCommunity.png"
+                        src="<?php echo one_url_images?>/firstRadiusCommunity.png"
                         alt=""
                     />
                     <img
                         class="community_box_image_second"
-                        src="./assets/images/secondRadiusCommunity.png"
+                        src="<?php echo one_url_images?>/secondRadiusCommunity.png"
                         width="40"
                         height="40"
                         alt=""
                     />
                     <img
                         class="community_box_image_third"
-                        src="./assets/images/thirdRadiusCommunity.png"
+                        src="<?php echo one_url_images?>/thirdRadiusCommunity.png"
                         width="40"
                         height="40"
                         alt=""
@@ -120,18 +122,18 @@
             </svg>
             <div
                 class="inverted"
-                style="background-image: url(./assets/images/imageClip.png)"
+                style="background-image: url(<?php echo one_url_images?>/imageClip.png)"
             ></div>
             <div class="box_video_wrapper_desktop">
                 <div class="box_video_play_wrapper openVideoModal">
                     <img
-                        src="./assets/images/play.svg"
+                        src="<?php echo one_url_images?>/play.svg"
                         width="28"
                         height="28"
                         alt=""
                     />
                 </div>
-                <img src="./assets/images/imageClip.png" alt="" />
+                <img src="<?php echo one_url_images?>/imageClip.png" alt="" />
             </div>
         </div>
     </div>
@@ -158,7 +160,7 @@
             <img
                 width="318"
                 height="600"
-                src="./assets/images/showBook.png"
+                src="<?php echo one_url_images?>/showBook.png"
                 alt=""
             />
         </div>
@@ -236,7 +238,7 @@
         </div>
     </div>
     <div class="person_image">
-        <img src="./assets/images/person.png" alt="" />
+        <img src="<?php echo one_url_images?>/person.png" alt="" />
     </div>
 </div>
 
@@ -268,7 +270,7 @@
                     <img
                         width="16"
                         height="16"
-                        src="./assets/images/arrow-right.svg"
+                        src="<?php echo one_url_images?>/arrow-right.svg"
                         alt=""
                     /></a>
             </div>
@@ -285,7 +287,7 @@
                     <img
                         width="16"
                         height="16"
-                        src="./assets/images/arrow-right.svg"
+                        src="<?php echo one_url_images?>/arrow-right.svg"
                         alt=""
                     /></a>
             </div>
@@ -302,7 +304,7 @@
                     <img
                         width="16"
                         height="16"
-                        src="./assets/images/arrow-right.svg"
+                        src="<?php echo one_url_images?>/arrow-right.svg"
                         alt=""
                     /></a>
             </div>
@@ -319,7 +321,7 @@
                     <img
                         width="16"
                         height="16"
-                        src="./assets/images/arrow-right.svg"
+                        src="<?php echo one_url_images?>/arrow-right.svg"
                         alt=""
                     /></a>
             </div>
@@ -336,7 +338,7 @@
                     <img
                         width="16"
                         height="16"
-                        src="./assets/images/arrow-right.svg"
+                        src="<?php echo one_url_images?>/arrow-right.svg"
                         alt=""
                     /></a>
             </div>
@@ -353,7 +355,7 @@
                     <img
                         width="16"
                         height="16"
-                        src="./assets/images/arrow-right.svg"
+                        src="<?php echo one_url_images?>/arrow-right.svg"
                         alt=""
                     /></a>
             </div>
@@ -370,7 +372,7 @@
                     <img
                         width="16"
                         height="16"
-                        src="./assets/images/arrow-right.svg"
+                        src="<?php echo one_url_images?>/arrow-right.svg"
                         alt=""
                     /></a>
             </div>
@@ -387,7 +389,7 @@
                     <img
                         width="16"
                         height="16"
-                        src="./assets/images/arrow-right.svg"
+                        src="<?php echo one_url_images?>/arrow-right.svg"
                         alt=""
                     /></a>
             </div>
@@ -404,7 +406,7 @@
                     <img
                         width="16"
                         height="16"
-                        src="./assets/images/arrow-right.svg"
+                        src="<?php echo one_url_images?>/arrow-right.svg"
                         alt=""
                     /></a>
             </div>
@@ -421,7 +423,7 @@
                     <img
                         width="16"
                         height="16"
-                        src="./assets/images/arrow-right.svg"
+                        src="<?php echo one_url_images?>arrow-right.svg"
                         alt=""
                     /></a>
             </div>
@@ -534,32 +536,4 @@
     </div>
 </div>
 
-<footer class="footer_wrapper">
-    <div class="container footer_content">
-        <div class="social_wrapper">
-            <img src="./assets/images/x.png" alt="" />
-            <img src="./assets/images/facebook.png" alt="" />
-            <img src="./assets/images/linkedin.png" alt="" />
-            <img src="./assets/images/instagram.png" alt="" />
-        </div>
-        <div>
-            <ul class="list_menu_wrapper">
-                <li><a href="">Home</a></li>
-                <li><a href="">About</a></li>
-                <li><a href="">Author</a></li>
-                <li><a href="">Testimonials</a></li>
-                <li><a href="">Blog</a></li>
-            </ul>
-        </div>
-        <div class="detail_lagal_website">
-            <p>© 2025 One Choice. One Act. All rights reserved.</p>
-        </div>
-    </div>
-</footer>
-
-<script src="./assets/js/jquery.js"></script>
-<script src="./assets/js/owl.carousel.min.js"></script>
-<script src="./assets/js/script.js"></script>
-</body>
-</html>
-
+<?php include plugin_dir_path(__FILE__) . 'footer-custom.php'; ?>

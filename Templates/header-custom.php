@@ -1,11 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <?php wp_head();?>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./assets/css/style.css" />
-    <link rel="stylesheet" href="./assets/css/owl.carousel.min.css" />
-    <link rel="stylesheet" href="./assets/css/owl.theme.default.css" />
     <title>One Choice. One Act.</title>
 </head>
 <body dir="ltr">
@@ -27,7 +25,7 @@
     </div>
 
     <div class="humbarger_menu">
-        <img src="./assets/images/menu.svg" alt="menu icon" />
+        <img src="<?php echo one_url_images?>/menu.svg" alt="menu icon" />
     </div>
 </header>
 
@@ -53,11 +51,11 @@
 
 <img
     class="hero_section_first_shadow"
-    src="./assets/images/shadowRight.svg"
+    src="<?php echo one_url_images?>/shadowRight.svg"
     alt=""
 />
 <img
     class="hero_section_second_shadow"
-    src="./assets/images/shadowLeft.svg"
+    src="<?php echo one_url_images?>/shadowLeft.svg"
     alt=""
 />
