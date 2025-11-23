@@ -21,7 +21,7 @@
     </ul>
 
     <div>
-        <button class="btn_header">Buy the book</button>
+        <a href="#" class="btn_header">Buy the book</a>
     </div>
 
     <div class="humbarger_menu">
