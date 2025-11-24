@@ -2,7 +2,7 @@
 /*
  * Plugin Name: onechoiceoneact
  */
-
+require_once plugin_dir_path(__FILE__) . 'inc/class-menu-walker.php';
 add_filter('theme_page_templates', function ($templates) {
     $templates['Home.php'] = 'Home Page Template';
     return $templates;
@@ -36,3 +36,26 @@ function one_assets()
 add_action('wp_enqueue_scripts', 'one_assets');
 
 define('one_url_images', plugin_dir_url(__FILE__) . '/assets/images');
+
+add_action('init', function () {
+    register_nav_menus([
+        'one_top_menu' => 'One Choice Top Menu',
+    ]);
+    register_nav_menus([
+        'one_mobile_top_menu' => 'One Choice Mobile Top Menu',
+    ]);
+});
+
+add_action('acf/init', function () {
+
+    add_filter('acf/settings/save_json', function () {
+        return plugin_dir_path(__FILE__) . 'acf-json';
+    });
+
+    add_filter('acf/settings/load_json', function ($paths) {
+        $paths = [];
+        $paths[] = plugin_dir_path(__FILE__) . 'acf-json';
+        return $paths;
+    });
+
+});

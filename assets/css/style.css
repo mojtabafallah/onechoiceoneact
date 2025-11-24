@@ -777,6 +777,8 @@ button {
 .community_box_image_first {
   border-radius: 100%;
   object-fit: cover;
+  height: 40px;
+  width: 40px;
 }
 
 .community_box_image_second {
@@ -784,12 +786,16 @@ button {
   object-fit: cover;
   position: absolute;
   left: 20px;
+  height: 40px;
+  width: 40px;
 }
 
 .community_box_image_third {
   border-radius: 100%;
   object-fit: cover;
   position: absolute;
+  height: 40px;
+  width: 40px;
 }
 
 .community_box_image_wrapper {
