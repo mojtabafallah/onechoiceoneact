@@ -767,6 +767,7 @@ button {
 .community_box_description_quality {
   font-weight: 800;
   font-size: 18px;
+  margin: 0;
 }
 
 .community_box_description_wrapper {
@@ -956,6 +957,10 @@ button {
   column-gap: 20px;
 }
 
+.description_personal_text{
+  width: 70%;
+}
+
 .person_title {
   font-weight: 700;
   font-size: 32px;
@@ -978,7 +983,7 @@ button {
   margin: 20px 0;
 }
 
-.person_image img {
+.one_person_image img {
   border-radius: 12px;
 }
 

@@ -3,6 +3,24 @@
     "title": "Home Info",
     "fields": [
         {
+            "key": "field_69248e891e453",
+            "label": "Base Info",
+            "name": "",
+            "aria-label": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0,
+            "selected": 0
+        },
+        {
             "key": "field_6923f28d20d56",
             "label": "Sub Title",
             "name": "sub_title",
@@ -24,7 +42,7 @@
         },
         {
             "key": "field_6923f67565a13",
-            "label": "first community image",
+            "label": "First Community Image",
             "name": "first_community_image",
             "aria-label": "",
             "type": "image",
@@ -49,7 +67,7 @@
         },
         {
             "key": "field_6923f69865a14",
-            "label": "second community image",
+            "label": "Second Community Image",
             "name": "second_community_image",
             "aria-label": "",
             "type": "image",
@@ -74,7 +92,7 @@
         },
         {
             "key": "field_6923f69a65a15",
-            "label": "third community image",
+            "label": "Third Community Image",
             "name": "third_community_image",
             "aria-label": "",
             "type": "image",
@@ -141,6 +159,64 @@
             "max_size": "",
             "mime_types": "",
             "preview_size": "medium"
+        },
+        {
+            "key": "field_69248ebb1e454",
+            "label": "About the Book",
+            "name": "",
+            "aria-label": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0,
+            "selected": 0
+        },
+        {
+            "key": "field_69248f3cefa0f",
+            "label": "About Title",
+            "name": "about_title",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_69248f4cefa10",
+            "label": "About Content",
+            "name": "about_content",
+            "aria-label": "",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1,
+            "delay": 0
         }
     ],
     "location": [
@@ -161,5 +237,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1763964749
+    "modified": 1764003718
 }

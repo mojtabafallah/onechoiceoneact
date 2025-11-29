@@ -208,7 +208,7 @@
     </div>
 
     <div class="description_personal_wrapper">
-        <div>
+        <div class="description_personal_text">
             <div class="book_title_wrapper">
                 <div></div>
                 <span class="book_label">About the Book</span>
@@ -237,7 +237,7 @@
                 <a href="#" class="btn read">Read More</a>
             </div>
         </div>
-        <div class="person_image">
+        <div class="one_person_image">
             <img src="<?php echo one_url_images ?>/person.png" alt=""/>
         </div>
     </div>
