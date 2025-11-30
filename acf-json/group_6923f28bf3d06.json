@@ -212,11 +212,31 @@
                 "class": "",
                 "id": ""
             },
-            "default_value": "",
+            "default_value": "<p>\r\n                is not another fluffy self-help manual. It’s a straight-talking,\r\n                deeply human guide to cutting through the bullshit and living in\r\n                alignment with your truth. Drawing on his near-death experience with\r\n                cancer, decades of global work, and practices tested in his own life,\r\n                Matthew Wilburn King shows how small, honest choices ripple outward\r\n                into lasting change.\r\n            <\/p>\r\n\r\n            <p>\r\n                This is not about perfection or performance—it's about learning to\r\n                listen, trusting your gut, and acting from your deepest knowing.\r\n            <\/p>\r\n\r\n            <ul class=\"list_book_box\">\r\n                <li>Know yourself with radical honesty<\/li>\r\n                <li>Release the expectations that keep you stuck<\/li>\r\n                <li>Build the courage to act on what you already know is true<\/li>\r\n                <li>Align your inner truth with your outer life<\/li>\r\n            <\/ul>\r\n\r\n            <p>\r\n                Whether you're facing a major crossroads or just tired of living out\r\n                of sync with yourself, One Choice. One Act. will help you reclaim\r\n                agency and design a life that’s yours—one choice, one act at a time.\r\n            <\/p>",
             "tabs": "all",
             "toolbar": "full",
             "media_upload": 1,
             "delay": 0
+        },
+        {
+            "key": "field_692ca4644cac7",
+            "label": "About First Button Title",
+            "name": "about_first_button_title",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Read More",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
         },
         {
             "key": "field_692afbf4f383e",
@@ -234,6 +254,26 @@
             },
             "default_value": "",
             "placeholder": ""
+        },
+        {
+            "key": "field_692ca48d4cac8",
+            "label": "About Second Button Title",
+            "name": "about_second_button_title",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Buy the book",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
         },
         {
             "key": "field_692afc67f383f",
@@ -364,7 +404,7 @@
                 "class": "",
                 "id": ""
             },
-            "default_value": "#",
+            "default_value": "Read More",
             "maxlength": "",
             "placeholder": "",
             "prepend": "",
@@ -639,5 +679,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1764527124
+    "modified": 1764538264
 }

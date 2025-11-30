@@ -5,27 +5,19 @@
 ?>
 <?php include plugin_dir_path(__FILE__) . 'header-custom.php'; ?>
     <div class="hero_section">
-        <img
-                class="hero_section_first_star"
-                src="<?php echo one_url_images ?>/starIconFirst.svg"
-                alt=""
-        />
-        <img
-                class="hero_section_second_star"
-                src="<?php echo one_url_images ?>/starIconFirst.svg"
-                alt=""
-        />
+        <img class="hero_section_first_star"
+             src="<?php echo one_url_images ?>/starIconFirst.svg"
+             alt=""/>
+
+        <img class="hero_section_second_star"
+             src="<?php echo one_url_images ?>/starIconFirst.svg"
+             alt=""/>
+
         <div class="title_hero_section_wrapper">
-            <h1 class="title_hero_section"><?php echo get_the_title()?></h1>
-            <p class="description_hero_section">
-                The No-Bullshit Guide to Living Aligned
-            </p>
+            <h1 class="title_hero_section"><?php echo get_the_title() ?></h1>
+            <p class="description_hero_section"><?php echo get_field('sub_title') ?></p>
             <p class="explain_hero_section">
-                One Choice. One Act. is a practical guide that invites you to live
-                with greater clarity, purpose, and alignment. Drawing on personal
-                experiences and deep insights, the book teaches how a single decision,
-                paired with honest action, can reshape your life and guide you toward
-                greater freedom and meaning.
+                <?php echo get_the_content() ?>
             </p>
             <div class="community_box_wrapper">
                 <div class="community_box_title_wrapper">
@@ -38,19 +30,19 @@
                                 class="community_box_image_first"
                                 width="40"
                                 height="40"
-                                src="<?php echo one_url_images ?>/firstRadiusCommunity.png"
+                                src="<?php echo get_field('first_community_image') ? get_field('first_community_image') : one_url_images . '/firstRadiusCommunity.png'; ?>"
                                 alt=""
                         />
                         <img
                                 class="community_box_image_second"
-                                src="<?php echo one_url_images ?>/secondRadiusCommunity.png"
+                                src="<?php echo get_field('second_community_image') ? get_field('second_community_image') : one_url_images . '/secondRadiusCommunity.png'; ?>"
                                 width="40"
                                 height="40"
                                 alt=""
                         />
                         <img
                                 class="community_box_image_third"
-                                src="<?php echo one_url_images ?>/thirdRadiusCommunity.png"
+                                src="<?php echo get_field('third_community_image') ? get_field('third_community_image') : one_url_images . '/thirdRadiusCommunity.png'; ?>"
                                 width="40"
                                 height="40"
                                 alt=""
@@ -66,7 +58,9 @@
                 <div class="box_video_play_wrapper openVideoModal">
                     <img src="<?php echo one_url_images ?>/play.svg" width="28" height="28" alt=""/>
                 </div>
-                <img src="<?php echo one_url_images ?>/imageClip.png" alt=""/>
+                <img
+                        src="<?php echo get_field('cover_video') ? get_field('cover_video') : one_url_images . '/imageClip.png'; ?>"
+                        alt=""/>
             </div>
         </div>
         <div class="box_video_play_wrapper_desktop">
@@ -81,19 +75,19 @@
                                 class="community_box_image_first"
                                 width="40"
                                 height="40"
-                                src="<?php echo one_url_images ?>/firstRadiusCommunity.png"
+                                src="<?php echo get_field('first_community_image') ? get_field('first_community_image') : one_url_images . '/firstRadiusCommunity.png'; ?>"
                                 alt=""
                         />
                         <img
                                 class="community_box_image_second"
-                                src="<?php echo one_url_images ?>/secondRadiusCommunity.png"
+                                src="<?php echo get_field('second_community_image') ? get_field('second_community_image') : one_url_images . '/secondRadiusCommunity.png'; ?>"
                                 width="40"
                                 height="40"
                                 alt=""
                         />
                         <img
                                 class="community_box_image_third"
-                                src="<?php echo one_url_images ?>/thirdRadiusCommunity.png"
+                                src="<?php echo get_field('third_community_image') ? get_field('third_community_image') : one_url_images . '/thirdRadiusCommunity.png'; ?>"
                                 width="40"
                                 height="40"
                                 alt=""
@@ -133,23 +127,25 @@
                                 alt=""
                         />
                     </div>
-                    <img src="<?php echo one_url_images ?>/imageClip.png" alt=""/>
+                    <img src="<?php echo get_field('cover_video') ? get_field('cover_video') : one_url_images . '/imageClip.png'; ?>"
+                         alt=""/>
                 </div>
             </div>
         </div>
     </div>
-
+<?php if (get_field('video')): ?>
     <div class="video-modal">
         <div class="video-content">
             <span class="close-modal">&times;</span>
 
             <div class="video-box">
                 <video id="modalVideo" controls>
-                    <source src="./assets/videos/sample.mp4" type="video/mp4"/>
+                    <source src="<?php echo get_field('video') ?>" type="video/mp4"/>
                 </video>
             </div>
         </div>
     </div>
+<?php endif; ?>
 
     <div class="section_explain">
         <div class="show_product_section_explain">
@@ -171,38 +167,13 @@
                 <span class="book_label">About the Book</span>
             </div>
 
-            <h2 class="book_title">One Choice. One Act.</h2>
-
-            <p>
-                is not another fluffy self-help manual. It’s a straight-talking,
-                deeply human guide to cutting through the bullshit and living in
-                alignment with your truth. Drawing on his near-death experience with
-                cancer, decades of global work, and practices tested in his own life,
-                Matthew Wilburn King shows how small, honest choices ripple outward
-                into lasting change.
-            </p>
-
-            <p>
-                This is not about perfection or performance—it's about learning to
-                listen, trusting your gut, and acting from your deepest knowing.
-            </p>
-
-            <ul class="list_book_box">
-                <li>Know yourself with radical honesty</li>
-                <li>Release the expectations that keep you stuck</li>
-                <li>Build the courage to act on what you already know is true</li>
-                <li>Align your inner truth with your outer life</li>
-            </ul>
-
-            <p>
-                Whether you're facing a major crossroads or just tired of living out
-                of sync with yourself, One Choice. One Act. will help you reclaim
-                agency and design a life that’s yours—one choice, one act at a time.
-            </p>
-
+            <h2 class="book_title"><?php echo get_field('about_title') ?></h2>
+            <?php echo get_field('about_content') ?>
             <div class="btn-group">
-                <a href="#" class="btn read">Read More</a>
-                <a href="#" class="btn buy">Buy the book</a>
+                <a href="<?php echo get_field('about_first_button_link') ?>"
+                   class="btn read"><?php echo get_field('about_first_button_title') ?></a>
+                <a href="<?php echo get_field('about_second_button_link') ?>"
+                   class="btn buy"><?php echo get_field('about_second_button_title') ?></a>
             </div>
         </div>
     </div>
@@ -213,28 +184,14 @@
                 <div></div>
                 <span class="book_label">About the Book</span>
             </div>
-            <p class="person_title">Speaker. Explorer</p>
-            <p class="person_skill">Scholar | Speaker | Explorer</p>
+            <p class="person_title"><?php echo get_field('speaker_explorer_title') ?></p>
+            <p class="person_skill"><?php echo get_field('speaker_explorer_sub_title') ?></p>
             <p class="person_explain">
-                Dr. Matthew King is a writer, speaker, and systems thinker known for
-                blending personal narrative with a global perspective. His work spans
-                environmental ethics, democracy, mindfulness, mortality, and the quiet
-                courage it takes to live in alignment with one’s truth. A former
-                advisor to governments, NGOs, and international institutions, Matthew
-                now focuses on writing and creative expression. His research and
-                essays have appeared in BBC Future, Mongabay, the Journal of
-                Biological Conservation, Earth Island Journal, and Boulder Magazine,
-                among other places. A wide range of experiences shapes his
-                perspective—from growing up in working-class West Tulsa to surviving
-                Stage IV blood cancer, conducting fieldwork in remote places, and
-                mentoring and teaching students at top universities. His compass
-                remains clear through it all: live with integrity, speak with clarity,
-                and help others do the same. He is the founder of Our COMMON
-                Foundation and author of One Choice. One Act., a book that offers a
-                clear, human path toward authentic living.
+                <?php echo get_field('speaker_explorer_content') ?>
             </p>
             <div class="btn-group">
-                <a href="#" class="btn read">Read More</a>
+                <a href="<?php echo get_field('speaker_explorer_button_link') ?>"
+                   class="btn read"><?php echo get_field('speaker_explorer_button_text') ?></a>
             </div>
         </div>
         <div class="one_person_image">
@@ -248,9 +205,9 @@
                 <div></div>
                 <span class="book_label">Blog</span>
             </div>
-            <p class="blog_title_slider">Explore Matthew’s Work</p>
+            <p class="blog_title_slider"><?php echo get_field('blog_title') ?></p>
             <p class="blog_description_slider">
-                Selected highlights from writing, talks, and creative work.
+                <?php echo get_field('blog_sub_title') ?>
             </p>
         </div>
         <div class="slider-wrapper">
@@ -285,6 +242,7 @@
                                 /></a>
                         </div>
                     <?php endwhile; ?>
+                <?php wp_reset_postdata(); ?>
                 <?php endif; ?>
             </div>
 
@@ -301,9 +259,9 @@
                 <div></div>
                 <span class="book_label">Testimonials</span>
             </div>
-            <p class="blog_title_slider">What People Are Saying</p>
+            <p class="blog_title_slider"><?php echo get_field('comment_title') ?></p>
             <p class="blog_description_slider">
-                Honest feedback on living with radical alignment.
+                <?php echo get_field('comment_sub_title') ?>
             </p>
         </div>
         <div class="slider-wrapper">
@@ -311,81 +269,27 @@
             <button class="custom_nav_comment left-nav">‹</button>
 
             <div class="comment_slider owl-carousel">
-                <div class="review-card">
-                    <h3 class="review-title">Unfiltered, Profound</h3>
+                <?php
+                $items = get_field('comment_items');
+                ?>
+                <?php foreach ($items as $item): ?>
+                    <div class="review-card">
+                        <h3 class="review-title"><?php echo $item['comment_item_title'] ?></h3>
 
-                    <p class="review-text">
-                        The book is beautifully simple yet deeply profound. Matthew King
-                        teaches, with radical honesty, how to align your inner truth with
-                        your outer life. This is exactly the book I needed to move from
-                        confusion to clarity.
-                    </p>
+                        <p class="review-text">
+                            <?php echo $item['comment_item_body'] ?>
+                        </p>
 
-                    <div class="review-user">
-                        <img src="/user.jpg" alt="user" class="review-avatar"/>
-                        <div>
-                            <p class="review-name">Dr. Elias Vance</p>
-                            <p class="review-job">Cognitive Researcher</p>
+                        <div class="review-user">
+                            <img src="<?php echo $item['comment_item_author_avatar'] ?>" alt="user"
+                                 class="review-avatar"/>
+                            <div>
+                                <p class="review-name"><?php echo $item['comment_item_author'] ?></p>
+                                <p class="review-job"><?php echo $item['comment_item_author_job'] ?></p>
+                            </div>
                         </div>
                     </div>
-                </div>
-
-                <div class="review-card">
-                    <h3 class="review-title">Unfiltered, Profound</h3>
-
-                    <p class="review-text">
-                        The book is beautifully simple yet deeply profound. Matthew King
-                        teaches, with radical honesty, how to align your inner truth with
-                        your outer life. This is exactly the book I needed to move from
-                        confusion to clarity.
-                    </p>
-
-                    <div class="review-user">
-                        <img src="/user.jpg" alt="user" class="review-avatar"/>
-                        <div>
-                            <p class="review-name">Dr. Elias Vance</p>
-                            <p class="review-job">Cognitive Researcher</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="review-card">
-                    <h3 class="review-title">Unfiltered, Profound</h3>
-
-                    <p class="review-text">
-                        The book is beautifully simple yet deeply profound. Matthew King
-                        teaches, with radical honesty, how to align your inner truth with
-                        your outer life. This is exactly the book I needed to move from
-                        confusion to clarity.
-                    </p>
-
-                    <div class="review-user">
-                        <img src="/user.jpg" alt="user" class="review-avatar"/>
-                        <div>
-                            <p class="review-name">Dr. Elias Vance</p>
-                            <p class="review-job">Cognitive Researcher</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="review-card">
-                    <h3 class="review-title">Unfiltered, Profound</h3>
-
-                    <p class="review-text">
-                        The book is beautifully simple yet deeply profound. Matthew King
-                        teaches, with radical honesty, how to align your inner truth with
-                        your outer life. This is exactly the book I needed to move from
-                        confusion to clarity.
-                    </p>
-
-                    <div class="review-user">
-                        <img src="/user.jpg" alt="user" class="review-avatar"/>
-                        <div>
-                            <p class="review-name">Dr. Elias Vance</p>
-                            <p class="review-job">Cognitive Researcher</p>
-                        </div>
-                    </div>
-                </div>
+                <?php endforeach; ?>
             </div>
 
             <!-- Right Arrow -->

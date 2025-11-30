@@ -255,7 +255,6 @@ button {
     position: relative;
     width: 100%;
     top: -236px;
-    z-index: -1;
     display: flex;
     padding-left: 165px;
     padding-right: 97px;
@@ -356,6 +355,7 @@ button {
   }
 
   .box_video_play_wrapper_desktop {
+    z-index: 1;
     position: relative;
     margin-bottom: 100px;
   }
