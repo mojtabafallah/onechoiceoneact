@@ -44,6 +44,10 @@ add_action('init', function () {
     register_nav_menus([
         'one_mobile_top_menu' => 'One Choice Mobile Top Menu',
     ]);
+
+    register_nav_menus([
+        'one_footer_menu' => 'One Choice Footer Menu',
+    ]);
 });
 
 add_action('acf/init', function () {

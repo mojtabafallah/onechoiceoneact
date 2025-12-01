@@ -46,14 +46,6 @@
         ]);
         ?>
 
-        <ul class="mobile_menu_list">
-            <li><a href="">Home</a></li>
-            <li><a href="">About</a></li>
-            <li><a href="">Author</a></li>
-            <li><a href="">Testimonials</a></li>
-            <li><a href="">Blog</a></li>
-        </ul>
-
         <div class="mobile_btn_header_wrapper">
             <button class="mobile_btn_header">Buy the book</button>
         </div>

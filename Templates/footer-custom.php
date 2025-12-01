@@ -1,22 +1,26 @@
 <footer class="footer_wrapper">
     <div class="container footer_content">
         <div class="social_wrapper">
-            <img src="<?php echo one_url_images?>/x.png" alt="" />
-            <img src="<?php echo one_url_images?>/facebook.png" alt="" />
-            <img src="<?php echo one_url_images?>/linkedin.png" alt="" />
-            <img src="<?php echo one_url_images?>/instagram.png" alt="" />
+            <?php $items = get_field('social_items') ?? [] ?>
+            <?php foreach ($items as $item): ?>
+                <a href="<?php echo $item['social_item_link'] ?>">
+                    <img src="<?php echo $item['social_item_image'] ?>" alt=""/>
+                </a>
+            <?php endforeach; ?>
         </div>
         <div>
-            <ul class="list_menu_wrapper">
-                <li><a href="">Home</a></li>
-                <li><a href="">About</a></li>
-                <li><a href="">Author</a></li>
-                <li><a href="">Testimonials</a></li>
-                <li><a href="">Blog</a></li>
-            </ul>
+            <?php
+            wp_nav_menu([
+                'theme_location' => 'one_footer_menu',
+                'container' => 'ul',
+                'container_class' => 'list_menu_wrapper',
+                'items_wrap' => '<ul class="list_menu_wrapper">%3$s</ul>',
+                'walker' => new One_Menu_Walker(),
+            ]);
+            ?>
         </div>
         <div class="detail_lagal_website">
-            <p>© 2025 One Choice. One Act. All rights reserved.</p>
+            <p>© <?php echo get_field('copy_right_text') ?></p>
         </div>
     </div>
 </footer>
