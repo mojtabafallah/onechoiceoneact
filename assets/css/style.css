@@ -178,7 +178,7 @@ button {
   }
 
   .footer_content {
-    padding: 40px 0;
+    padding: 40px 25px !important;
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
@@ -418,6 +418,10 @@ button {
 
 /* Mobile */
 @media (max-width: 1024px) {
+  .description_personal_text{
+    width: 100%;
+  }
+
   .book_title {
     font-size: 32px;
     line-height: 32 px;
@@ -620,7 +624,7 @@ button {
   }
 
   .footer_content {
-    padding: 40px 0;
+    padding: 40px 25px !important;
     display: flex;
     flex-direction: column-reverse;
     justify-content: space-between;
@@ -632,7 +636,7 @@ button {
     flex-direction: column;
     align-items: center;
     row-gap: 8px;
-    margin: 20px 0;
+    margin: 20px 0 !important;
   }
 
   .section_explain {
@@ -718,16 +722,19 @@ button {
   font-weight: 500;
   border: 2px solid transparent;
   transition: 0.3s;
+  transform: translateY(0) !important;
+  opacity: 1 !important;
+  color:black !important;
 }
 
 .btn.read {
-  color: #19a478;
+  color: #19a478 !important;
   border: 1px solid #19a478;
 }
 
 .btn.buy {
   background: #19a478;
-  color: white;
+  color: white !important;
 }
 
 .book_box ul {
@@ -762,6 +769,7 @@ button {
   font-weight: 300;
   font-size: 12px;
   line-height: 100%;
+  margin:0 !important;
 }
 
 .community_box_description_quality {
@@ -794,6 +802,7 @@ button {
 .community_box_image_third {
   border-radius: 100%;
   object-fit: cover;
+  left:40px;
   position: absolute;
   height: 40px;
   width: 40px;
@@ -801,6 +810,8 @@ button {
 
 .community_box_image_wrapper {
   position: relative;
+  display:flex;
+  line-height:0 !important;
 }
 
 .community_box_social_wrapper {
@@ -818,7 +829,7 @@ button {
   font-size: 18px;
   line-height: 24px;
   color: black;
-  margin-right: 20px;
+  margin: 0 20px 0 0 !important;
 }
 
 .list_menu_wrapper {
@@ -841,6 +852,12 @@ button {
   padding-top: 15px;
 }
 
+.btn_header:hover{
+  color:white !important;
+  transform: translateY(0) !important;
+  opacity: 1 !important;
+}
+
 .btn_header {
   font-weight: 500;
   font-size: 16px;
@@ -848,6 +865,8 @@ button {
   color: white;
   background-color: #19a478;
   border-radius: 12px;
+  position:relative;
+  z-index:10;
 }
 
 /* ---------------- MOBILE MENU ---------------- */
@@ -888,20 +907,32 @@ button {
   background: none;
   float: left;
   cursor: pointer;
+  border:none !important;
+  padding:0 !important;
+  text-transform:none !important;
+
 }
 
 .mobile_menu_list {
-  margin-top: 50px;
+  margin: 50px 0 0 0 !important;
+  list-style-type:none !important;
   display: flex;
   flex-direction: column;
   row-gap: 25px;
   align-items: center;
 }
 
+.mobile_menu_list li{
+  padding-bottom:0 !important;
+}
+
 .mobile_menu_list a {
   font-size: 22px;
   font-weight: 500;
   color: #000;
+  transform: translateY(0) !important;
+  opacity: 1 !important;
+  color:black !important;
 }
 
 .mobile_btn_header_wrapper {
@@ -913,15 +944,26 @@ button {
   margin-top: 40px;
   font-weight: 500;
   font-size: 16px;
-  padding: 15px 30px;
+  padding: 15px 30px 15px 30px !important;
   color: white;
   background-color: #19a478;
   border-radius: 12px;
+  border:none !important;
+  text-transform:none !important;
+  line-height: 1 !important;
+  letter-spacing: 0 !important;
 }
 
 @media (min-width: 1024px) {
   .mobile_menu_overlay {
     display: none;
+  }
+  .footer_content .list_menu_wrapper {
+    margin: 0 !important;
+  }
+
+  .description_personal_text{
+    width: 70%;
   }
 }
 
@@ -935,6 +977,7 @@ button {
   font-weight: 400;
   font-size: 16px;
   line-height: 100%;
+  margin:0 !important;
 }
 
 .footer_content .list_menu_wrapper {
@@ -955,10 +998,6 @@ button {
   margin: -166px auto 83px auto;
   display: flex;
   column-gap: 20px;
-}
-
-.description_personal_text{
-  width: 70%;
 }
 
 .person_title {
@@ -1036,6 +1075,7 @@ button {
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   z-index: 10;
   transition: 0.3s;
+  padding:0 0 5px 2px !important;
 }
 
 .custom_nav_comment {
@@ -1052,6 +1092,8 @@ button {
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   z-index: 10;
   transition: 0.3s;
+  padding:0 0 5px 2px !important;
+
 }
 
 /* Left arrow at the left side */
